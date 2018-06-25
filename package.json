@@ -1,0 +1,25 @@
+{
+  "name": "ciri-callback",
+  "version": "0.0.1",
+  "description": "ciri auth callback",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js"
+  },
+  "author": "Jeff Lai",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "debug": "^3.1.0",
+    "koa": "^2.5.1",
+    "simple-oauth2": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.13.5"
+  }
+}
