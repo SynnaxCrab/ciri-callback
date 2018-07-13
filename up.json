@@ -1,0 +1,25 @@
+{
+  "name": "ciri-callback",
+  "profile": "lambda",
+  "regions": ["us-west-2"],
+  "hooks": {
+    "build": "yarn build:up",
+    "clean": "rm server.js"
+  },
+  "proxy": {
+    "command": "node server.js"
+  },
+  "stages": {
+    "production": {
+      "domain": "callback.memors.me"
+    },
+    "staging": {
+      "domain": "callback0.memors.me"
+    },
+    "development": {
+      "proxy": {
+        "command": "nodemon index.js"
+      }
+    }
+  }
+}
