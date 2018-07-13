@@ -15,7 +15,10 @@ const client = oauth2.create({
 export default () => {
   return async (ctx, next) => {
     const code = ctx.query.code
-    const options = { code }
+    const options = {
+      code,
+      redirect_uri: process.env.REDIRECT_URI,
+    }
 
     try {
       const result = await client.authorizationCode.getToken(options)
