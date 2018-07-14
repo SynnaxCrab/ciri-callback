@@ -4,3 +4,4 @@ up
 .env
 yarn-error.log
 coverage
+server.js
