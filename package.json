@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:up": "browserify src/app.js --node -u pg-native -u encoding -t babelify > server.js ",
-    "dev": "nodemon -r dotenv/config index.js"
+    "dev": "NODE_ENV=development nodemon -r dotenv/config index.js"
   },
   "author": "Jeff Lai",
   "license": "MIT",
