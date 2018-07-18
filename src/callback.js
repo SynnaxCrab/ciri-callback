@@ -27,7 +27,7 @@ export default () => {
         domain: process.domain,
         signed: false,
         httpOnly: true,
-        secure: process.env.NODE_ENV === 'development' ? true : false,
+        secure: process.env.NODE_ENV === 'development' ? false : true,
       })
       ctx.redirect(process.env.APP_URL)
     } catch (e) {
