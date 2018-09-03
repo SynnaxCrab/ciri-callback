@@ -24,7 +24,7 @@ export default () => {
       const result = await client.authorizationCode.getToken(options)
       const { token } = client.accessToken.create(result)
       ctx.cookies.set('access_token', token.access_token, {
-        domain: process.domain,
+        domain: process.env.DOMAIN,
         signed: false,
         httpOnly: true,
         secure: process.env.NODE_ENV === 'development' ? false : true,
