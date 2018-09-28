@@ -11,18 +11,19 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "debug": "^3.1.0",
+    "debug": "^4.0.1",
     "koa": "^2.5.1",
     "simple-oauth2": "^2.2.0"
   },
   "devDependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-register": "^6.26.0",
-    "babelify": "^8.0.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babelify": "^10.0.0",
     "browserify": "^16.2.2",
     "dotenv": "^6.0.0",
     "nodemon": "^1.17.5",
-    "prettier": "^1.13.5"
+    "prettier": "^1.14.3"
   }
 }
