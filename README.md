@@ -1,5 +1,6 @@
 # Ciri Callback
 
+[![Build Status](https://travis-ci.org/winfield/ciri-callback.svg?branch=master)](https://travis-ci.org/winfield/ciri-callback)
 [![Greenkeeper badge](https://badges.greenkeeper.io/winfield/ciri-callback.svg)](https://greenkeeper.io/)
 
 ## Why a separated callback service
